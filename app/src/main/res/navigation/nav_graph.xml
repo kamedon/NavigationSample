@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/nav_graph.xml"
+  app:startDestination="@id/menu1">
+
+  <fragment
+    android:id="@+id/menu1"
+    android:name="com.kamedon.navigationsample.Menu1Fragment"
+    android:label="Menu1Fragment">
+    <action
+      android:id="@+id/action_menu1Fragment_to_nestOfMenu1Fragment"
+      app:destination="@id/nestOfMenu1" />
+  </fragment>
+  <fragment
+    android:id="@+id/menu2"
+    android:name="com.kamedon.navigationsample.Menu2Fragment"
+    android:label="Menu2Fragment" />
+  <fragment
+    android:id="@+id/menu3"
+    android:name="com.kamedon.navigationsample.Menu3Fragment"
+    android:label="Menu3Fragment" />
+  <fragment
+    android:id="@+id/nestOfMenu1"
+    android:name="com.kamedon.navigationsample.NestOfMenu1Fragment"
+    android:label="NestOfMenu1Fragment" />
+</navigation>
